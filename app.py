@@ -32,7 +32,7 @@ def webhook():
             print(str(e))
         return "Success"
     
-def send_fb_message(to, message):123
+def send_fb_message(to, message):
     post_message_url = 'https://graph.facebook.com/v10.0/me/messages?access_token={token}'.format(token="EAAX22FfA0EkBAMqlTZBqZApMtqRYWOEgTCoqZArF2Tf2NX7qkLTgUd2tjX2wZAa8eIpS09QyPWE6uMVp7wPrZAbunowZANCT6hl9E4ZBLI4i0eMf0qQhIuteoNbPe54PnjLZARZAVgGjPT1i4Me2OLDp9Uiiaozx9sFQCfTXpUSSYtAZDZD")
     response_message = json.dumps({"messaging_type":"RESPONSE",
                                     "recipient":{"id": to}, 
